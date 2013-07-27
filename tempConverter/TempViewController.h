@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TempViewController : UIViewController
+@interface TempViewController : UIViewController <UITextFieldDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *fahrenheitTemp;
 @property (nonatomic, weak) IBOutlet UITextField *celsiusTemp;

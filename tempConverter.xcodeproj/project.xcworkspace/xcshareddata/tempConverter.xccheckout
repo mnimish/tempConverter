@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E154A9A1-C01C-47E3-8416-AFF9FB44ABD7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tempConverter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9BABFD0A-A6F7-4584-8F3C-CE539CC6930E</key>
+		<string>ssh://github.com/ntheone/tempConverter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tempConverter.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9BABFD0A-A6F7-4584-8F3C-CE539CC6930E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ntheone/tempConverter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9BABFD0A-A6F7-4584-8F3C-CE539CC6930E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BABFD0A-A6F7-4584-8F3C-CE539CC6930E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tempConverter</string>
+		</dict>
+	</array>
+</dict>
+</plist>

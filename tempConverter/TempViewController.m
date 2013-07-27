@@ -10,8 +10,8 @@
 
 @interface TempViewController ()
 
-@property (nonatomic, weak) NSString *lastFahrenheit;
-@property (nonatomic, weak) NSString *lastCelsius;
+@property (nonatomic, strong) NSString *lastFahrenheit;
+@property (nonatomic, strong) NSString *lastCelsius;
 
 - (void) convertTempManual;
 
@@ -33,6 +33,8 @@
     [super viewDidLoad];
     self.lastCelsius = @"";
     self.lastFahrenheit = @"";
+    self.fahrenheitTemp.delegate = self;
+    self.celsiusTemp.delegate = self;
     [self.convertButton addTarget:self action:@selector(convertTempManual) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -46,6 +48,17 @@
     [self convertTempManual];
 }
 
+#pragma mark -UITextField delegate
+- (BOOL) textFieldShouldBeginEditing:(UITextField *)textField {
+    [UIView animateWithDuration:0.3 animations:^{
+        self.convertButton.frame = CGRectMake(20, 240, 280, 80);
+    }];
+    return YES;
+}
+
+- (void) textFieldDidEndEditing:(UITextField *)textField {
+}
+
 #pragma mark -private methods
 
 - (void) convertTempManual {
@@ -57,6 +70,11 @@
     }
     self.lastCelsius = self.celsiusTemp.text;
     self.lastFahrenheit = self.fahrenheitTemp.text;
+    
+    //Take button to bottom
+    [UIView animateWithDuration:0.3 animations:^{
+        self.convertButton.frame = CGRectMake(20, 450, 280, 80);
+    }];
 }
 
 @end
