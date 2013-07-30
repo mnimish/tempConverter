@@ -64,9 +64,9 @@
 - (void) convertTempManual {
     [self.view endEditing:YES];
     if(self.fahrenheitTemp.text.length && (![self.fahrenheitTemp.text isEqualToString:self.lastFahrenheit] || !self.celsiusTemp.text.length)) {
-        self.celsiusTemp.text = [NSString stringWithFormat:@"%d", (int)roundf(([self.fahrenheitTemp.text floatValue] -32) * 5 / 9)];
+        self.celsiusTemp.text = [NSString stringWithFormat:@"%0.2f", ([self.fahrenheitTemp.text floatValue] -32) * 5 / 9];
     } else if(self.celsiusTemp.text.length && (![self.celsiusTemp.text isEqualToString:self.lastCelsius] || !self.fahrenheitTemp.text.length)) {
-        self.fahrenheitTemp.text = [NSString stringWithFormat:@"%d", (int)roundf([self.celsiusTemp.text floatValue] * 9 /5 + 32)];
+        self.fahrenheitTemp.text = [NSString stringWithFormat:@"%0.2f", [self.celsiusTemp.text floatValue] * 9 /5 + 32];
     }
     self.lastCelsius = self.celsiusTemp.text;
     self.lastFahrenheit = self.fahrenheitTemp.text;
